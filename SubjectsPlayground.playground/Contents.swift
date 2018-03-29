@@ -17,6 +17,8 @@ publishSubject.on(.next("World"))
 
 publishSubject.subscribe(onNext :{ element in
     print(element)
+}, onCompleted : {
+    print("Completeeeeeeeeed")
 })
 
 publishSubject.onNext("Helllloooooo again")
@@ -60,7 +62,7 @@ replaySubject.subscribe(onNext :{ element in
 replaySubject.onNext("Clothes")
 replaySubject.onNext("Toys")
 
-replaySubject.subscribe(onNext :{ element in
+replaySubject.subscribe( onNext :{ element in
     print("Second Subscriber : " + element)
 })
 

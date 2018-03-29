@@ -30,7 +30,7 @@ print("----------------------------------")
 observable3.subscribe(onNext : { element in
     print(element)
 }, onCompleted : {
-    print("Completed")
+    print("Completed againb")
 })
 
 print("----------------------------------")
